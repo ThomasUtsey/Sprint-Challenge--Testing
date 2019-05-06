@@ -1,8 +1,9 @@
 const express = require('express')
 const app = express()
-const port = 3000
+const port = 5000
+const server = require('./server')
 
-app.listen(port, (err) => {
+server.listen(port, (err) => {
   if (err) {
     return console.log('something bad happened', err)
   }
