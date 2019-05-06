@@ -25,22 +25,42 @@ In this challenge use `Test Driven Development` to build a RESTful API using Nod
 Demonstrate your understanding of this week's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 1. In Jest, what are the differences between `describe()` and `it()` globals, and what are good uses for them?
-1. What is the point of `Test Driven Development`? What do you think about this approach?
+
+## describe()
+
+Allows test to be further compartmentalized by component or functionalite. Describe can be understood as a parent container for focused testing.
+
+## it () 
+
+It are the individual tests nested with in the describe that may be located with in a nested describe as well,
+
+## Global () 
+
+are commands that are accessible on the global scope when in this instance using jest. There are various dependencies that have functionality and methods that can be called after installing the dependencies. 
+
+2. What is the point of `Test Driven Development`? What do you think about this approach?
+
+Test driven development() is a method in which functions and components are tested as they are developed to allow development to remain focused while testing functionality as features and functionality is developed insted of waiting until after software is developed.
+
+I believe that using tdd has massive benefits in speeding up functionality as opposed to troubleshooting problems when code has already been developed to debug. 
+
 1. Mention three types of automated tests.
+
+unit integration and snapshot are three types of automated tests. 
 
 ## Project Set Up
 
-- [ ] Fork and clone this repository.
-- [ ] **CD into the folder** where you downloaded the repository.
-- [ ] Run `yarn` or `npm i` to download all dependencies.
-- [ ] Type `yarn test` or `npm test` to run the tests. The `test` script is already configured.
+- [x] Fork and clone this repository.
+- [x] **CD into the folder** where you downloaded the repository.
+- [x] Run `yarn` or `npm i` to download all dependencies.
+- [x] Type `yarn test` or `npm test` to run the tests. The `test` script is already configured.
 
 ## Minimum Viable Product
 
 Your finished project must include all of the following requirements:
 
-- [ ] Use `jest` and `supertest` to write the tests.
-- [ ] Write the **tests BEFORE** writing the route handlers.
+- [x] Use `jest` and `supertest` to write the tests.
+- [x] Write the **tests BEFORE** writing the route handlers.
 - [ ] Your API must have both `POST` and `GET` endpoints for `/games`.
 - [ ] Write a **minimum** of three tests per endpoint.
 

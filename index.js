@@ -1,4 +1,11 @@
-// const server = require('./api/server.js');
+const express = require('express')
+const app = express()
+const port = 3000
 
-const port = 5000;
-server.listen(port, () => console.log(`\n** server up on port ${port} **\n`));
+app.listen(port, (err) => {
+  if (err) {
+    return console.log('something bad happened', err)
+  }
+
+  console.log(`server is listening on ${port}`)
+})
